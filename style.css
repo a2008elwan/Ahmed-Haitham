@@ -642,11 +642,120 @@ footer p {
   color: var(--title-color);
 }
 
+@media (max-width: 1024px) {
+  header {
+    width: 95%;
+  }
+  .home-left h2,
+  .home-left h2 u {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+    width: 95%;
+    gap: 15px;
+  }
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  header nav ul li a {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 0.9rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  #home {
+    flex-direction: column-reverse;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  #home img {
+    width: 280px;
+    height: 280px;
+  }
+  .home-left h2,
+  .home-left h2 u {
+    font-size: 2.2rem;
+  }
+  .home-left p {
+    font-size: 1rem;
+  }
+
+  .title-services,
+  .title-skills,
+  .title-projects,
+  .title-certificates,
+  .title-events,
+  .title-experience {
+    font-size: 1.8rem;
+  }
+
+  .services,
+  .skills,
+  .projectcontainer,
+  .certificatescontainer {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .projectcontainer .project,
+  .certificatescontainer .certificate {
+    width: 100%;
+    margin: 0;
+  }
+
+  .timeline::before {
+    left: 30px;
+  }
+  .timeline-item {
+    gap: 15px;
+  }
+  .timeline-number {
+    min-width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+  .timeline {
+    padding: 20px 10px;
+  }
+
   .event-card {
     width: 100%;
   }
   .event-section {
-    padding: 0 20px;
+    padding: 0 15px;
+  }
+  .event-card img {
+    height: 220px;
+  }
+
+  .contact-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav ul li a {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 0.8rem;
+  }
+  .home-left h2,
+  .home-left h2 u {
+    font-size: 1.8rem;
+  }
+  #home img {
+    width: 220px;
+    height: 220px;
   }
 }
